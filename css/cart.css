@@ -1,0 +1,42 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("https://funart.pro/uploads/posts/2021-04/1617499293_48-p-oboi-oblako-na-belom-fone-53.png"), repeat;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: wheat;
+    padding: 10px;
+}
+.container .cart{
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container .cart *{
+    border: 1px solid #111;
+    padding: 30px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.wrapper *{
+    width: max-content;
+}
+.sum{
+    border: 1px solid #111;
+    border-radius: 8px;
+}
+.res{
+    display: flex;
+    justify-content: space-between;
+}

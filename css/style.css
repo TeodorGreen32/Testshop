@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ribeye Marrow', cursive;
+    font-weight: 600;
+    
+}
+a{
+    text-decoration: none;
+    color: green;
+
+}
+a:hover{
+    color: greenyellow;
+}
+.footer{
+    margin: 0 auto;
+    
+    max-width: 1200px;
+    
+    height: max-content;
+    padding: 50px 0px;
+    background-color:blanchedalmond;
+    
+}
+.footer div{
+    width: max-content;
+    margin: 0 auto;
+}
+body{
+    background: url("https://funart.pro/uploads/posts/2021-04/1617499293_48-p-oboi-oblako-na-belom-fone-53.png"), repeat;
+}
+.container{
+    margin: 0 auto;
+    background-color: antiquewhite;
+    max-width: 1200px;
+    padding: 30px;
+    
+}
+.container .wrapper{
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap: 25px;
+    padding: 30px;
+    transition: 0.250s ease;
+}
+.container .cards{
+    
+    width: max-content;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+    border: 1px solid #111;
+    background-color: rgba(255, 182, 193, 0.438);
+    gap: 15px;
+    border-radius: 15px;
+
+}
+.container .cardsmax{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    background-color: lightcyan;
+    
+}
+.container .cardsmax *{
+    margin: 0 auto;
+    /* width: max-content; */
+    height: 100%;
+}
+.container .cardsmax img{
+    width: 100%;
+}
+.container .cardsmax .navi{
+    
+    
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+    
+    
+    
+}
+.navi *{
+    padding: 30px;
+    border: 1px solid #111;
+    border-radius: 8px;
+    text-decoration: none;
+    color:green;
+    font-size: 30px;
+    transition: 0.180s ease;
+}
+.navi *:hover{
+    transform: scale(105%);
+    color: greenyellow;
+}
+
+.cfooter{
+    margin: 0 auto;
+    max-width: 1200px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+.cfooter button{
+    
+    margin: 0 auto;
+    width: max-content;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: lightcoral;
+    transition: 0.150s ease;
+}
+.cfooter button a{
+    color: #111;
+}
+.cfooter button:hover{
+    background-color: lightgreen;
+}
+.cost{
+    border: 1px solid #111;
+    border-radius: 15px;
+    background-color: rgba(240, 255, 255, 0.274);
+    padding: 10px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(104, 104, 104, 0.507);
+    
+}
+p{
+    font-size: 30px;
+}
+.buy p{
+    width: max-content;
+}
+.reg{
+    
+    width: max-content;
+}
+.reg *{
+    width: 50px;
+}
