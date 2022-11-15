@@ -6,6 +6,9 @@
     font-weight: 600;
     
 }
+#hidden{
+    display:none;
+}
 a{
     text-decoration: none;
     color: green;
@@ -68,7 +71,8 @@ body{
     flex-direction: column;
     gap: 10px;
     padding: 30px;
-    background-color: lightcyan;
+    
+    
     
 }
 .container .cardsmax *{
@@ -76,8 +80,15 @@ body{
     /* width: max-content; */
     height: 100%;
 }
-.container .cardsmax img{
-    width: 100%;
+
+.bg img{   
+    background: url(../img/bg.jpg),red;
+    background-size:100%;
+    background-position: center;
+    background-repeat:no-repeat;
+    max-height: 500px;
+    width: 500px;
+    
 }
 .container .cardsmax .navi{
     
@@ -144,16 +155,11 @@ img{
     background-color: rgba(104, 104, 104, 0.507);
     
 }
-p{
-    font-size: 30px;
+.buy--form{
+    border: 1px solid #111;
+    padding: 30px;
+    border-radius: 8px;
 }
-.buy p{
-    width: max-content;
-}
-.reg{
-    
-    width: max-content;
-}
-.reg *{
+#count{
     width: 50px;
 }

@@ -32,7 +32,7 @@
         <div class="wrapper">
         <?php
             require('date.php');
-            
+            $arr = $goods;
             if($_GET['sort'] == "costup"){
                 function sorting($x,$y){
                     
@@ -40,19 +40,23 @@
                     elseif($x['cost'] < $y['cost']) return 1;
                     else return 0;
                 }
-                usort($goods, "sorting");
+                usort($arr, "sorting");
+                for($i = 0; $i < count($arr);$i++){
+                $arr[$i]['id'] = $i;
                 
-                for($i = 0; $i < count($goods);$i++){
-                $name = $goods[$i]["name"];
-                $img = $goods[$i]["imgPath"];
-                $cost = $goods[$i]["cost"];
-                $idP = $goods[$i]['id'];
+                $name = $arr[$i]["name"];
+                $img = $arr[$i]["imgPath"];
+                $cost = $arr[$i]["cost"];
+                $idP = $arr[$i]['id'];
                 echo "<div class='cards'>
                 <p><a href='product.php?id=$idP'>$name</a></p>
                 <img src='$img'>
                 <p class='cost'>$cost руб</p>
                 </div>";
             }
+            $filename = "json.txt";
+            $data = json_encode($arr);
+            file_put_contents($filename,$data);
             }
             elseif($_GET['sort'] == "costdown"){
                 function sorting($x,$y){
@@ -61,31 +65,40 @@
                     elseif($x['cost'] > $y['cost']) return 1;
                     else return 0;
                 }
-                usort($goods, "sorting");
-                for($i = 0; $i < count($goods);$i++){
-                $name = $goods[$i]["name"];
-                $img = $goods[$i]["imgPath"];
-                $cost = $goods[$i]["cost"];
-                $idP = $goods[$i]['id'];
+                usort($arr, "sorting");
+                for($i = 0; $i < count($arr);$i++){
+                $arr[$i]['id'] = $i;
+                $name = $arr[$i]["name"];
+                $img = $arr[$i]["imgPath"];
+                $cost = $arr[$i]["cost"];
+                $idP = $arr[$i]['id'];
                 echo "<div class='cards'>
                 <p><a href='product.php?id=$idP'>$name</a></p>
                 <img src='$img'>
                 <p class='cost'>$cost руб</p>
                 </div>";
             }
+            $filename = "json.txt";
+            $data = json_encode($arr);
+            file_put_contents($filename,$data);
             }
             elseif($_GET['sort'] == ''){
-                for($i = 0; $i < count($goods);$i++){
-                    $name = $goods[$i]["name"];
-                    $img = $goods[$i]["imgPath"];
-                    $cost = $goods[$i]["cost"];
-                    $idP = $goods[$i]['id'];
+                for($i = 0; $i < count($arr);$i++){
+                    $arr[$i]['id'] = $i;
+
+                    $name = $arr[$i]["name"];
+                    $img = $arr[$i]["imgPath"];
+                    $cost = $arr[$i]["cost"];
+                    $idP = $arr[$i]['id'];
                     echo "<div class='cards'>
                     <p><a href='product.php?id=$idP'>$name</a></p>
                     <img src='$img'>
                     <p class='cost'>$cost руб</p>
                     </div>";
             }
+            $filename = "json.txt";
+            $data = json_encode($arr);
+            file_put_contents($filename,$data);
         }
             
         ?>

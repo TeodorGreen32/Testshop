@@ -21,7 +21,7 @@ $goods = [
     [
         "id" => 3,
         "name"  => "Морковь",
-        "imgPath" => "https://www.pngmart.com/files/1/Big-Carrot-PNG.png",
+        "imgPath" => "img\pngwing.com.png",
         "cost" => 17
     ],
     [
@@ -34,11 +34,30 @@ $goods = [
         "id" => 5,
         "name"  => "Лук",
         "imgPath" => "https://www.pngall.com/wp-content/uploads/2016/03/Onion-PNG-File.png",
-        "cost" => 59
+        "cost" => 20
+
+    ],
+    [
+        "id" => 6,
+        "name"  => "Тыква",
+        "imgPath" => "img/pumpkin.png",
+        "cost" => 150
+
+    ],
+    [
+        "id" => 7,
+        "name"  => "Мандарин",
+        "imgPath" => "img/Mandarin.png",
+        "cost" => 71
+
+    ],
+    [
+        "id" => 8,
+        "name"  => "Грабли",
+        "imgPath" => "img/grab.png",
+        "cost" => 500
 
     ]
-
     
-
 ];
 ?>

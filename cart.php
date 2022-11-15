@@ -11,12 +11,25 @@
     <div class="container">
         <div class="cart">
             <div class="wrapper">
-                <div class="elem">
-                    Капуста
-                </div>
-                <div class="elem">
-                    ТЫква
-                </div>
+                <?php
+                
+
+                $out = file_get_contents('cart.txt');
+                $out = preg_replace('/]\[/',',',$out);
+                
+                $Arr = json_decode($out,TRUE);
+                
+                foreach($Arr as $key){
+                    $name = $key['name'];
+                    $count = $key['count'];
+                    echo "<div class='elem'>
+                        <p>$name</p>
+                        <p>$count</p>
+                    </div>";
+                };
+                
+
+                ?>
             </div>
             <div class="res">
                 <button>Купить</button>
